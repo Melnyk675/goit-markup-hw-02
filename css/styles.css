@@ -24,9 +24,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif, 'Raleway', sans-serif;  
+  font-family: 'Roboto', sans-serif, 'Raleway', sans-serif; 
+  font-size: 14px; 
   letter-spacing: 0.03em;
-  background-color: var(--back-color);
+  color: var(--primary-text-color);
 }
 
 .header {
@@ -67,7 +68,7 @@ text-decoration: none;
 
 .link-current:hover,
 .link-current:focus {
-    color: var(--second-color);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
@@ -82,7 +83,7 @@ text-decoration: none;
 
 .link:hover,
 .link:focus {
-    color: var(--second-color);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
@@ -91,7 +92,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--blue-color);
+color: var(--second-color);
 text-decoration: none;
 }
 
@@ -111,17 +112,12 @@ text-decoration: none;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-color);
-    text-decoration: none;
 }
 
 .contact-link-tel:hover,
 .contact-link-tel:focus {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--third-color);
-    text-decoration: none;
+    color: var(--second-color);
+    background-color: var(--back-color);
 }
 
 .hero,
@@ -146,19 +142,13 @@ color: var(--back-color);
     background-color: var(--blue-color);
     border: none;
     color: var(--back-color);
+    cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
     background-color: var(--blue-color);
-    border: none;
     color: var(--back-color);
-    cursor: pointer;
 }
 
 .section-subtitle {
@@ -316,11 +306,8 @@ color: var(--back-color);
 
 .address-item:hover,
 .address-item:focus {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    background-color: var(--third-color);
     color: var(--hover-focus-color);
-    text-decoration: none;
 }
 
 
