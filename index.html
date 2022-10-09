@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="./css/styles.css">
         </head>
+        
         <body>
           <header class="header">
-            <div class="container">
+            <div class="container wrapper">
             <nav class="header-navigation">
               <a href="/" class="logo-header"><span class="logo-part">Web</span>Studio</a>
               <ul class="site-nav list link">
@@ -27,7 +28,7 @@
               </li>
               </ul>
               </nav>
-        
+               
         <ul class="site-contact list">
           <li class="contact-item">
             <a class="contact-link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -40,12 +41,15 @@
          </header>
         
          <main>
-         <section class="hero">
+          <div class="container container-box">
+         <section class="hero section">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="btn">Замовити послугу</button>
-         </section>
+          </section>
+            </div>
+         
 
-          <section class="advantages">
+          <section class="advantages section">
             <div class="container">
             <h2 class="visually-hidden">Наші особливості</h2>
             <ul class="list">
@@ -61,7 +65,7 @@
             </div>
           </section>
           
-          <section class="business">
+          <section class="business section">
             <div class="container">
             <h2 class="title-question">Чим ми займаємося</h2>
             <ul class="list">
@@ -90,10 +94,10 @@
             </div>
           </section>
           
-          <section class="section-team">
+          <section class="section-team section">
             <div class="container">
             <h2 class="team-title">Наша команда</h2>
-            <ul class="list">
+            <ul class="team list">
               <li class="team-item">
                 <img src="./img/productdesigner-img-1.jpg.jpg"
                 alt="Ігор Дем'яненко"
@@ -137,8 +141,9 @@
                 <li><a class="address-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </address>
+              </div>
             </footer>
-          </div>
+          
             </body>
          </html>
         
