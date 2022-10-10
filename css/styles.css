@@ -319,6 +319,7 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     display: block;
+    margin-bottom: 50px;
 }
 
 .team-item,
