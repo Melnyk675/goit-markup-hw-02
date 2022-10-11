@@ -58,7 +58,6 @@ img {
 
 .container {
     width: 1200px;
-    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -66,14 +65,9 @@ img {
 }
 
 .header {
-    background-color: var(--back-color);
-    margin: 0 auto;
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-item {
-   margin: 0px 30px;
-}
 
 .wrapper {
     display: flex;
@@ -83,7 +77,6 @@ align-items: center;
 .header-navigation {
     display: flex;
     align-items: center;
-    margin: 0px 50px;
 }
 
 .logo-header {
@@ -95,20 +88,12 @@ letter-spacing: 0.03em;
 color: var(--back1-color);
 text-decoration: none;
 padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 10px;
+padding-bottom: 25px;
+margin-right: 93px;
 }
 
 .logo-part {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
     color: var(--blue-color);
-    text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-left: 20px;
 }
 
 .site-contact {
@@ -116,14 +101,14 @@ padding-top: 24px;
 }
 
 .site-nav {
-    margin-left: 93px;
+    display:flex;
+    gap: 50px;
 }
 
 .list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .team {
@@ -159,7 +144,7 @@ padding-top: 24px;
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
-    gap: 30px;
+    gap: 50px;
 }
 
 .link:hover,
@@ -168,8 +153,8 @@ padding-top: 24px;
     text-decoration: none;
 }
 
-.contact-item {
-    margin: 0px 50px;
+.contact-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .contact-link-mail {
@@ -212,9 +197,7 @@ gap: 30px;
     background-color: var(--third-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-title {
@@ -448,11 +431,9 @@ margin-bottom: 30px;
    padding-bottom: 20px;
 }
 
-.footer {
-    padding-top: 50px;
-    padding-bottom: 60px;
+.footer-back .container {
+    padding: 60px 0;
 }
-
 
 .logo-footer {
     font-family: 'Raleway';
@@ -462,8 +443,8 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     color: var(--blue-color);
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .logo-web {
@@ -482,6 +463,9 @@ margin-bottom: 30px;
     flex-direction: column;
 }
 
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 
 .address-target {
     font-size: 14px;
@@ -491,7 +475,7 @@ margin-bottom: 30px;
     text-decoration: none;
 }
 
-.address-item {
+.address-effect {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
