@@ -185,6 +185,10 @@ gap: 30px;
     background-color: var(--back-color);
 }
 
+.header-envelope {
+    margin-right: 10px;
+}
+
 .hero-section {
     background-color: var(--third-color);
     padding-top: 200px;
