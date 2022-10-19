@@ -232,7 +232,7 @@ margin-bottom: 30px;
     color: var(--back-color);
 }
 
-.business  {
+.business .section {
     padding-top: 0;
 }
 
@@ -384,7 +384,6 @@ color: var(--primary-text-color);
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-top: 10px;
     margin-bottom: 50px;
 }
 
