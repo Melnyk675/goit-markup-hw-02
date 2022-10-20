@@ -194,6 +194,7 @@ gap: 30px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: url();
 }
 
 .hero-title {
@@ -286,6 +287,23 @@ margin-bottom: 30px;
     margin-top: 10px;
 }
 
+.box-benefits {
+width: 270px;
+height: 120px;
+left: 215px;
+top: 774px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
 .title-question {
     font-weight: 700;
     font-size: 36px;
@@ -359,6 +377,17 @@ line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+}
+
+.box-companies {
+box-sizing: border-box;
+width: 170px;
+height: 92px;
+left: 215px;
+top: 2490px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+margin-top: 50px;
 }
 
 .button {
