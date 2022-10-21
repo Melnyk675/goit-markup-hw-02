@@ -103,6 +103,7 @@ margin-right: 93px;
 
 .site-nav {
     display:flex;
+    align-items: center;
     gap: 50px;
 }
 
@@ -131,6 +132,11 @@ margin-right: 93px;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
+}
+
+.second-link:hover,
+.second-link:focus {
+    color: var(--blue-color);
 }
 
 .link-current:hover,
@@ -185,6 +191,19 @@ gap: 30px;
     background-color: var(--back-color);
 }
 
+.contact-link-mail .icon-envelope {
+     fill: currentColor;
+}
+
+.contact-link-tel .icon-smartphone {
+    fill: currentColor;
+}
+
+.icon-envelope,
+.icon-smartphone {
+    margin: 10px;
+}
+
 .header-envelope {
     margin-right: 10px;
 }
@@ -193,8 +212,15 @@ gap: 30px;
     background-color: var(--third-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    background-image: url();
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/community.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+
 }
 
 .hero-title {
@@ -296,6 +322,8 @@ background: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
 }
+
+
 
 .clients {
     display: flex;
