@@ -159,7 +159,7 @@ margin-right: 93px;
     text-decoration: none;
 }
 
-.contact-link-mail {
+.contact-link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -171,25 +171,8 @@ padding-bottom: 32px;
 gap: 30px;
 }
 
-.contact-link-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--second-color);
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    gap: 30px;
-}
-
-.contact-link-mail:hover,
-.contact-link-mail:focus  {
-    color: var(--blue-color);
-}
-
-.contact-link-tel:hover,
-.contact-link-tel:focus {
+.contact-link:hover,
+.contact-link:focus  {
     color: var(--blue-color);
 }
 
@@ -202,8 +185,9 @@ gap: 30px;
     fill: currentColor;
 }
 
-.header-envelope {
-    margin-right: 10px;
+.contact-icon:hover,
+.contact-icon:focus {
+    fill: var(--blue-color);
 }
 
 /*=======================HERO====================================*/
@@ -289,7 +273,6 @@ margin-bottom: 30px;
 
 .features-list {
     display: block;
-    flex-basis: calc((100% - 30 * 3) / 4);
     align-items: flex-start;
 }
 
@@ -302,7 +285,13 @@ margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: calc((100% - 90px) / 4);
     }    
+
+    .benefits {
+        width: 70px;
+        height: 70px;
+    }
 
 .section-subtitle {
     list-style: none;
@@ -434,6 +423,7 @@ color: var(--primary-text-color);
 
 /*======================================CLIENTS===========================*/
 
+
 .title-clients {
 font-family: 'Roboto';
 font-style: normal;
@@ -448,6 +438,7 @@ color: #212121;
 .clients-list {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .clients-list-item {
@@ -464,12 +455,23 @@ border: 1px solid var(--social-icon-color);
 border-radius: 4px;
 margin-top: 50px;
 fill: var(--social-icon-color);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-basis: calc((100% - 100px) / 6);
 }
 
 .box-companies:hover {
  fill: var(--blue-color);
  border: var(--blue-color) solid 1px;
 }
+
+.clients-icon {
+    width: 100px;
+    height: 60px;
+}
+
+/*============================PORTFOLIO===========================*/
 
 .button {
     font-family: inherit;
@@ -552,6 +554,8 @@ fill: var(--social-icon-color);
     color: var(--second-color);
 }
 
+/*==============================FOOTER=====================*/
+
 .footer-back {
     background-color: var(--third-color);
     padding-top: 60px;
@@ -587,7 +591,7 @@ fill: var(--social-icon-color);
     margin-bottom: 9px;
 }
 
-.address-target {
+.map-link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -595,7 +599,12 @@ fill: var(--social-icon-color);
     text-decoration: none;
 }
 
-.address-effect {
+.map-link:hover,
+.map-link:focus {
+color: var(--blue-color);
+}
+
+.address-list-item {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -603,10 +612,15 @@ fill: var(--social-icon-color);
     text-decoration: none;
 }
 
+.address-list-item:hover,
+.address-list-item:focus {
+    color: var(--blue-color);
+}
+
 .address-item:hover,
 .address-item:focus {
     background-color: var(--third-color);
-    color: var(--hover-focus-color);
+    color: var(--hover-focus-color-color);
 }
 
 .address-part {
@@ -615,10 +629,10 @@ fill: var(--social-icon-color);
 }
 
 .footer-container-social {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    width: 200px;
+    height: 80px;
+    margin-left: 70px;
+    margin-bottom: 80px;
 }
 
 .footer-social-title {
@@ -644,14 +658,19 @@ margin-bottom: 20px;
 }
 
 .footer-social-link {
-    width: 100%;
-    height: 100%;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--blue-color);
 }
 
 .footer-icon-social {
