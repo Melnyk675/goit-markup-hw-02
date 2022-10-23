@@ -153,12 +153,6 @@ margin-right: 93px;
     text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
-    color: var(--blue-color);
-    text-decoration: none;
-}
-
 .contact-link {
 font-weight: 500;
 font-size: 14px;
@@ -168,7 +162,8 @@ color: var(--second-color);
 text-decoration: none;
 padding-top: 32px;
 padding-bottom: 32px;
-gap: 30px;
+display: flex;
+align-items: center;
 }
 
 .contact-link:hover,
@@ -197,12 +192,13 @@ gap: 30px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/community.png);
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/team.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1600px;
-
+    height: 600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -245,9 +241,11 @@ margin-bottom: 30px;
     color: var(--back-color);
 }
 
-.business .section {
-    padding-top: 0;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
 
 .site-contact {
     display: flex;
@@ -257,11 +255,6 @@ margin-bottom: 30px;
 
 /*=================================ADVANTAGES==============================*/
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .list {
     gap: 50px;
 }
@@ -269,11 +262,6 @@ margin-bottom: 30px;
 .advantages-list {
     display: flex;
     gap: 30px;
-}
-
-.features-list {
-    display: block;
-    align-items: flex-start;
 }
 
 .box-benefits {
@@ -311,6 +299,10 @@ margin-bottom: 30px;
 }
 
 /*=======================OUR-WORK=========================*/
+
+.business-section {
+    padding-top: 0;
+}
 
 .business-list {
     display: flex;
@@ -413,52 +405,43 @@ color: var(--primary-text-color);
 .social-site:hover,
 .social-site:focus {
     background-color: var(--blue-color);
-    color: var(--back-color);
-}
-
-.social-site:hover svg,
-.social-site:focus svg {
     fill: var(--back-color);
 }
+
+
 
 /*======================================CLIENTS===========================*/
 
 
 .title-clients {
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 50px;
 }
 
 .clients-list {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 50px;
+    gap: 30px;
 }
 
 .clients-list-item {
     width: 170px;
     height: 92px;
-    cursor: pointer;
 }
 
 .box-companies {
-box-sizing: border-box;
 width: 100%;
 height: 100%;
 border: 1px solid var(--social-icon-color);
 border-radius: 4px;
-margin-top: 50px;
 fill: var(--social-icon-color);
 display: flex;
 justify-content: center;
 align-items: center;
-flex-basis: calc((100% - 100px) / 6);
 }
 
 .box-companies:hover {
@@ -467,7 +450,7 @@ flex-basis: calc((100% - 100px) / 6);
 }
 
 .clients-icon {
-    width: 100px;
+    width: 106px;
     height: 60px;
 }
 
@@ -525,14 +508,19 @@ flex-basis: calc((100% - 100px) / 6);
 
 .list-img {
     flex-basis: calc((100% - 60px) / 3);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products-link {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    display: block;
+}
+
+.products-link:hover,
+.products-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products-container {
@@ -633,15 +621,10 @@ flex-basis: calc((100% - 100px) / 6);
 }
 
 .footer-container-social {
-    width: 200px;
-    height: 80px;
     margin-left: 70px;
-    margin-bottom: 80px;
 }
 
 .footer-social-title {
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
