@@ -416,27 +416,42 @@
                   </button>
                   <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
                   <form class="modal-form">
-                    <div class="input-wrap">
-                    <label>Ім'я</label>
-                    <input type="text" name="user-name" class="modal-input" />
+                    <label class="input-label">
+                      <span>Ім'я</span>
+                    <span class="input-wrap">
+                    <input type="text" name="user-name" id="name" class="modal-input" />
                     <svg class="modal-input-icon" width="18" height="18">
                       <use href="./img/icons.svg#icon-person-black"></use>
                       </svg>
-                      </div>
-                      <div class="input-wrap">
-                    <label>Телефон</label>
-                    <input type="text" name="user-tel" class="modal-input" />
+                    </span>
+                    </label>
+                    <label class="input-label">
+                      <span>Телефон</span>
+                      <span class="input-wrap">
+                    <input type="text" name="user-tel" id="tel" class="modal-input" />
                     <svg class="modal-input-icon" width="18" height="18">
                       <use href="./img/icons.svg#icon-phone-black"></use>
                     </svg>
-                      </div>
-                      <div class="input-wrap">
-                    <label>Пошта</label>
-                    <input type="text" name="user-email" class="modal-input" />
+                  </span>
+                  </label>
+                    <label class="input-label">
+                      <span>Пошта</span>
+                      <span class="input-wrap">
+                    <input type="text" name="user-email" id="email" class="modal-input" />
                     <svg class="modal-input-icon" width="18" height="18">
                       <use href="./img/icons.svg#icon-email-black"></use>
                     </svg>
-                      </div>
+                  </span>
+                  </label>
+                      <label class="input-label">Коментар</label>
+                      <span class="input-wrap">
+                        <textarea name="user-comment" class="modal-text" placeholder="Введіть текст"></textarea>
+                      </span>
+                      <span class="input-wrap">
+                        <input type="checkbox" name="policy" id="policy" class="check-box" />
+                        <span class="form-custom-check">Погоджуюся з розсилкою та приймаю</span>
+                        <a class="form-agree-link" href="">Умови договору</a>
+                        </span>
                   </form>
                   </div>
                   <script src="./js/modal.js"></script>
