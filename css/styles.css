@@ -245,7 +245,7 @@ margin-bottom: 30px;
     cursor: pointer;
     display: inline-block;
     padding: 10px 32px;
-    transition-property: color;
+    transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
