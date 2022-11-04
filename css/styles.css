@@ -928,12 +928,15 @@ margin-bottom: 20px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus-within + .modal-input-icon {
     fill: var(--blue-color);
 }
 
+.form-field-textarea {
+    margin-bottom: 20px;
+}
+
 .modal-text {
-    font-size: 12px;
     color: rgba(117, 117, 117, 0.5);
     width: 100%;
     height: 120px;
@@ -965,7 +968,8 @@ margin-bottom: 20px;
 
 .icon-checkbox {
     position: absolute;
-    margin: 5px;
+    top: 5px;
+    left: 12px;
     width: 16px;
     height: 15px;
     background-image: url(../img/check.svg);
@@ -975,7 +979,8 @@ margin-bottom: 20px;
 }
 
 .form-checkbox:checked + .icon-checkbox {
-    margin: 5px;
+    top: 5px;
+    left: 12px;
     width: 16px;
     height: 15px;
     background-image: url(../img/checked.svg);
