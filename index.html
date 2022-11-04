@@ -460,19 +460,17 @@
                   </label>
                       <label class="input-label">Коментар</label>
                       <span class="input-wrap">
-                        <textarea name="user-comment" class="modal-text" placeholder="Введіть текст"></textarea>
+                        <textarea name="user-comment" class="modal-text" placeholder="Введіть текст">
+                        </textarea>
                       </span>
-                      <span class="input-wrap">
-                        <input type="checkbox" name="policy" id="checkbox" class="check-box" required />
-                        <svg class="modal-input-icon" width="16" height="15">
-                          <use href="./img/icons.svg#icon-icon-check"></use>
-                        </svg>
-                        <span class="form-custom-check">Погоджуюся з розсилкою та приймаю</span>
-                        <a class="form-agree-link" href="">Умови договору</a>
+                      <span class="form-field-checkbox">
+                        <label class="input-label checkbox">
+                        <input type="checkbox" name="policy" id="checkbox" class="form-checkbox visually-hidden" required />
+                        Погоджуюся з розсилкою та приймаю
+                        <span class="icon-checkbox"></span>
+                        <a class="contract" href="">Умови договору</a>
                         </span>
-                        <span class="input-wrap">
                         <button type="submit" class="btn-send">Відправити</button>
-                        </span>
                   </form>
                   </div>
                   </div>

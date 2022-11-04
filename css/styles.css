@@ -890,11 +890,15 @@ margin-bottom: 20px;
 }
 
 .input-label {
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: #757575;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--second-color);
+    margin-bottom: 4px;
 }
+
 
 .modal-input {
     width: 100%;
@@ -947,26 +951,50 @@ color: #757575;
     border: 1px solid var(--blue-color);
 }
 
-.check-box {
-width: 16px;
-height: 15px;
-border-radius: 2px;
-margin-top: 20px;
-margin-bottom: 30px;
-margin-right: 10px;
+.form-field-checkbox {
+    position: relative;
+    margin-bottom: 30px;
 }
 
-.form-custom-check {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+
+.icon-checkbox {
+    position: absolute;
+    margin: 5px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../img/check.svg);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-agree-link {
+.form-checkbox:checked + .icon-checkbox {
+    margin: 5px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../img/checked.svg);
+    }
+    
+    .form-checkbox:focus + .icon-checkbox {
+        background-origin: border-box;
+        border: 2px solid var(--blue-color);
+        border-radius: 2px;
+      }
+
+.checkbox,
+.contract {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-color);
+}
+
+.contract {
     color: var(--blue-color);
 }
 
