@@ -882,7 +882,7 @@ font-weight: 700;
 font-size: 20px;
 text-align: center;
 color: #212121;
-margin-bottom: 20px;
+margin-bottom: 12px;
 }
 
 .input-wrap {
@@ -898,7 +898,6 @@ margin-bottom: 20px;
     color: var(--second-color);
     margin-bottom: 4px;
 }
-
 
 .modal-input {
     width: 100%;
@@ -932,10 +931,6 @@ margin-bottom: 20px;
     fill: var(--blue-color);
 }
 
-.form-field-textarea {
-    margin-bottom: 20px;
-}
-
 .modal-text {
     color: rgba(117, 117, 117, 0.5);
     width: 100%;
@@ -944,6 +939,7 @@ margin-bottom: 20px;
     border-radius: 4px;
     resize: none;
     padding: 12px 16px;
+    margin-bottom: 20px;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -956,7 +952,6 @@ margin-bottom: 20px;
 
 .form-field-checkbox {
     position: relative;
-    margin-bottom: 30px;
 }
 
   .checkbox {
@@ -965,13 +960,12 @@ margin-bottom: 20px;
     gap: 8px;
   }
 
-
 .icon-checkbox {
-    position: absolute;
     top: 5px;
     left: 12px;
     width: 16px;
     height: 15px;
+    margin-top: 4px;
     background-image: url(../img/check.svg);
     transition-property: border;
     transition-duration: 250ms;
@@ -1001,6 +995,7 @@ margin-bottom: 20px;
 
 .contract {
     color: var(--blue-color);
+    margin-bottom: 30px;
 }
 
 .btn-send {
@@ -1012,7 +1007,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 border-radius: 4px;
 font-weight: 700;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.88;
 display: block;
 align-items: center;
 text-align: center;
