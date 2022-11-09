@@ -60,7 +60,7 @@ img {
 
 /*=================================HEADER==============================*/
 
-.container {
+.header__container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -77,12 +77,12 @@ img {
 align-items: center;
 }
 
-.header-navigation {
+.nav {
     display: flex;
     align-items: center;
 }
 
-.logo-header {
+.header__logo-header {
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
@@ -95,18 +95,18 @@ padding-bottom: 25px;
 margin-right: 93px;
 }
 
-.logo-part {
+.header__logo-part {
     color: var(--blue-color);
 }
 
-.site-contact:hover,
-.site-contact:focus {
+.contact:hover,
+.contact:focus {
     display: flex;
     gap: 50px;
     color: var(--blue-color)
 }
 
-.site-nav {
+.nav__list {
     display:flex;
     align-items: center;
     gap: 50px;
@@ -118,7 +118,7 @@ margin-right: 93px;
     gap: 30px;
 }
 
-.link-current {
+.current {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -133,12 +133,12 @@ margin-right: 93px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-current:hover,
-.link-current:focus {
+.current:hover,
+.current:focus {
     color: #188CE8;
 }
 
-.second-link {
+.nav__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -150,8 +150,8 @@ margin-right: 93px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.second-link:hover,
-.second-link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: var(--blue-color);
 }
 
@@ -159,7 +159,13 @@ margin-right: 93px;
     text-decoration: none;
 }
 
-.contact-link {
+.contact {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.contact__link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -175,12 +181,12 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
-.contact-link:focus  {
+.contact__link:hover,
+.contact__link:focus  {
     color: var(--blue-color);
 }
 
-.contact-icon {
+.contact__icon {
     fill: var(--second-color);
     margin-right: 10px;
     transition-property: fill;
@@ -188,18 +194,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-icon {
+.contact__icon {
     fill: currentColor;
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
+.contact__icon:hover,
+.contact__icon:focus {
     fill: var(--blue-color);
 }
 
 /*=======================HERO====================================*/
 
-.hero-section {
+.hero {
     background-color: var(--third-color);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -213,7 +219,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -232,7 +238,7 @@ margin-bottom: 30px;
     background-color: #2F303A;
 }
 
-.btn {
+.hero__btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -250,8 +256,8 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover,
-.btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
     background-color: #188CE8;
     color: var(--back-color);
 }
@@ -261,11 +267,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 94px;
 }
 
-.site-contact {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
-}
 
 /*=================================ADVANTAGES==============================*/
 
@@ -273,7 +274,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     gap: 50px;
 }
 
-.advantages-list {
+.features__list {
     display: flex;
     gap: 30px;
 }
@@ -295,7 +296,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         height: 70px;
     }
 
-.section-subtitle {
+.features__title {
     list-style: none;
     text-decoration: none;
     font-weight: 700;
@@ -306,7 +307,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--primary-text-color);
 }
 
-.section-text {
+.features__text {
     line-height: 1.71;
     color: var(--second-color);
     margin-top: 10px;
