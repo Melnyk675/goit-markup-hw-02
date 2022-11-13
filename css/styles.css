@@ -112,12 +112,6 @@ margin-right: 93px;
     gap: 50px;
 }
 
-.team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
 .current {
     font-weight: 500;
     font-size: 14px;
@@ -363,6 +357,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /*==================================OUR-TEAM======================*/
 
 .team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     background: var(--hover-focus-color);
 }
 
@@ -454,7 +451,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-/*======================================CLIENTS===========================*/
+/*======================================CUSTOMERS===========================*/
 
 
 .customers__title {
