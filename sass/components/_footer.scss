@@ -32,13 +32,6 @@
 }
 
 .address {
-&__item:not(:last-child) {
-    margin-bottom: 9px;
-&:hover,
-&:focus {
-    background-color: var($third-color);
-    color: var($hover-focus-color-color);
-}
      &__link {
     &__list-item {
     font-size: 14px;
@@ -53,12 +46,17 @@
 &:focus {
     color: var($blue-color);
 }
+&__item:not(:last-child) {
+    margin-bottom: 9px;
+&:hover,
+&:focus {
+    background-color: var($third-color);
+    color: var($hover-focus-color);
+}
     }
      }
-    
+     
 
-
-    
 
 .map-link {
     font-size: 14px;
