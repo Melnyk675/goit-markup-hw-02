@@ -24,8 +24,6 @@
   outline: transparent;
   border: 1px solid var($blue-color);
 }
-}
-}
 &__icon {
     position: absolute;
     top: 50%;
@@ -35,12 +33,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 &__input:focus-within + &__icon {
     fill: var($blue-color);
 }
+}
+}
 
-&__textarea {
+.form__textarea {
     color: rgba(117, 117, 117, 0.5);
     width: 100%;
     height: 120px;
