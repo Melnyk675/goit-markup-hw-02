@@ -1,4 +1,5 @@
 .hero {
+    //display: none;
     background-color: var($third-color);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -10,7 +11,7 @@
     max-width: 1600px;
     height: 600px;
     margin: 0 auto;
-&__title {
+hero__title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -24,7 +25,7 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
 }
-&__btn {
+hero__btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
