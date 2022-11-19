@@ -79,7 +79,23 @@ img {
   pointer-events: none;
 }
 
-.current {
+.nav__list {
+  display:flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav__item {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav__current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -96,15 +112,15 @@ img {
 .nav__current.current::after {
   position: absolute;
   bottom: 0%;
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #2196f3;
   border-radius: 2px;
+  background: #2196f3;
 }
-.current:hover,
-.current:focus {
+.nav__current:hover,
+.nav__current:focus {
   color: #188CE8;
 }
 
@@ -137,6 +153,12 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    display: inline-block;
+    padding: 26px 0;
+  }
 }
 .header__logo-part {
   color: var(#2196F3);
@@ -274,6 +296,14 @@ img {
   gap: 50px;
   margin-left: auto;
 }
+@media screen and (max-width: 767px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
 .contact__link {
   font-weight: 500;
   font-size: 14px;
@@ -304,6 +334,22 @@ img {
 }
 .contact__link:hover__icon__icon:hover, .contact__link:hover__icon__icon:focus, .contact__link:focus__icon__icon:hover, .contact__link:focus__icon__icon:focus {
   fill: var(#2196F3);
+}
+}
+@media screen and (min-width: 768px) {
+  .contact__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact__icon {
+    display: none;
+  }
 }
 
 .menu-social__list {
@@ -557,6 +603,11 @@ img {
 .customers__list {
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 480px) {
+  .customers__list {
+    justify-content: center;
+  }
 }
 .customers__item {
   width: 170px;

@@ -51,12 +51,23 @@ align-items: center;
         margin: 0;
       }
 nav__list {
+  display:flex;
+  align-items: center;
+  gap: 50px;
     @include tablet {
     display:flex;
     align-items: center;
     gap: 50px;
       }
     nav__item {
+      position: relative;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
         @include tablet {
             margin: 0;
           }
@@ -78,6 +89,34 @@ nav__link {
 &:hover,
 &:focus {
     color: var($blue-color);
+    .nav__current {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var($blue-color);
+      text-decoration: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      gap: 30px;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav__current:hover,
+  .nav__current:focus {
+      color: #188CE8;
+  }
+  .nav__current.current::after {
+      position: absolute;
+      bottom: 0%;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background: #2196f3;
+  }
 }
 }
 }
