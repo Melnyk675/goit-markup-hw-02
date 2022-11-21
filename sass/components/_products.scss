@@ -1,6 +1,10 @@
 .products {
-    padding-top: 0;
-&__title {
+    display: none;
+    
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+.products__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -9,17 +13,18 @@
     color: var($primary-text-color);
     margin-bottom: 50px;
 }
-&__list {
+.products__list {
     display: flex;
     gap: 30px;
 }
-&__item {
+.products__item {
     display: block;
     max-width: 100%;
     height: auto;
     gap: 30px;
 }
 }
+
 
 .thumb {
     position: relative;
