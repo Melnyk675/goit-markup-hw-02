@@ -157,10 +157,11 @@ nav__link {
    .button__menu .icon__cross {
      display: none;
   }
-  .button__menu.is-open .icon__cross {
+  .button__menu .icon__cross {
     display: block;
   }
-  .button__menu .icon__menu {
+  .button__menu, 
+  .icon__menu {
    // display: none;
    position: absolute;
    top: 10px;
@@ -311,4 +312,7 @@ contact__icon {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $blue-color;
+}
+.contact__icon {
+  // display: none;
 }

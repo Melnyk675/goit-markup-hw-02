@@ -275,11 +275,12 @@ nav__item.current::after {
   display: none;
 }
 
-.button__menu.is-open .icon__cross {
+.button__menu .icon__cross {
   display: block;
 }
 
-.button__menu .icon__menu {
+.button__menu,
+.icon__menu {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -287,7 +288,8 @@ nav__item.current::after {
   height: 40px;
 }
 @media screen and (min-width: 768px) {
-  .button__menu .icon__menu {
+  .button__menu,
+.icon__menu {
     display: none;
   }
 }
@@ -851,14 +853,11 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address__link:hover, .address__link:focus {
-  color: var(#2196F3);
+  color: #2196F3;
 }
 
 .map-link {
   color: #FFFFFF;
-}
-.map-link:hover, .map-link:focus {
-  color: var(#2196F3);
 }
 
 .footer-social {
@@ -893,7 +892,7 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social .footer-socials__link:hover, .footer-social .footer-socials__link:focus {
-  background-color: var(#2196F3);
+  background-color: #2196F3;
 }
 .footer-social .footer-socials__icon {
   fill: #FFFFFF;
