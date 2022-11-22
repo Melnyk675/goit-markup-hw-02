@@ -2,9 +2,11 @@
   display: block;
   align-items: center;
     border-bottom: 1px solid #ECECEC;
-    
+}
     @media screen and (min-width: 768px) {
+      .header {
         display: flex;
+
       }
 header__logo-header {
     font-family: 'Raleway';
@@ -17,11 +19,13 @@ header__logo-header {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-    
+
     @media screen and (min-width: 768px) {
+      .header__logo-header {
       display: inline-block;
       padding: 26px 0;
     }
+  }
     }
 header__logo-part {
         color: var($blue-color);
@@ -44,8 +48,9 @@ header__logo-part {
    z-index: 1;
    // transform: translateX(100%);
    transition: transform 250ms ease-in-out;
- 
+}
    @media screen and (min-width: 768px) {
+    .wrapper {
      position: inherit;
      flex-direction: row;
      justify-content: space-between;
@@ -59,14 +64,16 @@ header__logo-part {
 
 .nav {
     margin-bottom: auto;
-    
+}
     @media screen and (min-width: 768px) {
+      
+      .nav {
     display: flex;
     align-items: center;
         margin: 0;
       }
     }
-nav__list {
+.nav__list {
     
   @include tablet {
     display:flex;
@@ -84,12 +91,14 @@ nav__link {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+}
    @media screen and (min-width: 768px) {
+    .nav-link {
         padding: 32px 0;
       }
-      
+    }
       @media screen and (max-width: 767px) {
+        .nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -100,6 +109,7 @@ nav__link {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
+    }
 &:hover,
 &:focus {
     color: var($blue-color);
@@ -118,11 +128,9 @@ nav__link {
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
   &:hover,
   &:focus {
       color: #188CE8;
-  }
   &.current::after {
       position: absolute;
       bottom: 0%;
@@ -134,6 +142,7 @@ nav__link {
       background: #2196f3;
   }
 }
+    }
 
 
 .nav__button.js-close-menu  {
@@ -145,7 +154,9 @@ nav__link {
       // z-index: 1;
        // border: none;
        // background-color: transparent;
+}
     @media screen and (min-width: 768px) {
+      .nav__button.js-close-menu  {
       display: none;
     }
 }
@@ -170,7 +181,10 @@ nav__link {
    height: 40px;
    // border: none;
    // background-color: transparent;
+  }
    @media screen and (min-width: 768px) {
+    .button__menu, 
+  .icon__menu {
      display: none;
    }
  }
@@ -189,22 +203,28 @@ nav__link {
 .contact {
   display: inline-block;
   margin-bottom: 64px;
-  
+}
   @media screen and(min-width:768px) {
+    .contact {
     display: block;
     margin-bottom: 0;
   }
+}
   @media screen and (min-width: 1200px) {
+    .contact {
     display: flex;
   }
 }
    .contact__item:not(:last-child) {
          margin-bottom: 32px;
-
+   }
          @media screen and (min-width: 768px) {
+          .contact__item:not(:last-child) {
           margin-bottom: 10px;
         }
+      }
         @media screen and (min-width: 1200px) {
+          .contact__item:not(:last-child) {
           margin-right: 30px;
           margin-bottom: 0;
         }
@@ -228,14 +248,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 34px;
   line-height: calc(40 / 34);
   color: $blue-color;
-
+}
   @media screen and (min-width: 768px) {
+    &.mail {
     font-size: 12px;
     line-height: calc(14 / 12);
     color: $second-color;
   }
-
+  }
   @media screen and (min-width: 1200px) {
+    &.mail {
     font-size: 14px;
     line-height: calc(16 / 14);
     color: $second-color;
@@ -245,13 +267,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 24px;
   line-height: calc(24 / 28);
   color: $second-color;
-
+}
   @media screen and (min-width: 768px) {
+    &.tel {
     font-size: 12px;
     line-height: calc(14 / 12);
     color: $second-color;
   }
+}
   @media screen and (min-width: 1200px) {
+    &.tel {
     font-size: 14px;
     line-height: calc(16 / 14);
     color: $second-color;
@@ -278,12 +303,15 @@ contact__icon {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+}
     @media screen and (min-width: 768px) {
+      contact__icon {
       display: block;
       margin-right: 8px;
     }
+  }
     @media screen and (min-width: 1200px) {
+      contact__icon {
       display: block;
       margin-right: 10px;
     }
@@ -298,8 +326,9 @@ contact__icon {
 .menu-social__list {
   display: flex;
   gap: 20px;
-
+}
   @media screen and (min-width: 768px) {
+    .menu-social__list {
     display: none;
   }
 }
