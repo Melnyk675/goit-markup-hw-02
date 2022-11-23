@@ -1,9 +1,11 @@
 .products {
     display: none;
-    
+
     @media screen and (min-width: 1200px) {
+        .products {
         display: block;
     }
+}
 .products__title {
     font-weight: 700;
     font-size: 36px;

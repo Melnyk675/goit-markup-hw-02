@@ -66,7 +66,6 @@ header__logo-part {
     margin-bottom: auto;
 }
     @media screen and (min-width: 768px) {
-      
       .nav {
     display: flex;
     align-items: center;
@@ -201,7 +200,7 @@ nav__link {
   }
 }
 .contact {
-  display: inline-block;
+  display: flex;
   margin-bottom: 64px;
 }
   @media screen and(min-width:768px) {
@@ -213,6 +212,7 @@ nav__link {
   @media screen and (min-width: 1200px) {
     .contact {
     display: flex;
+    flex-direction: row;
   }
 }
    .contact__item:not(:last-child) {

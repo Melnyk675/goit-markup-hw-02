@@ -1,7 +1,6 @@
 .hero {
      // display: none;
   max-width: 480px;
- 
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -14,15 +13,16 @@
   @include retina-2 {
     background-image: url(../img/team-mob-2x.jpg);
   }
-  
+
   @media screen and (min-width: 768px) {
+    .hero {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/team-tab.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    }
     @include retina-2 {
       background-image: url(../img/team-tab-2x.jpg);
     }
@@ -54,8 +54,9 @@ text-align: center;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
-
+}
 @media screen and (min-width: 1200px) {
+  .hero__title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -89,7 +90,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var($back-color);
 }
 }
-
 
 .container-box {
     background-color: #2F303A;

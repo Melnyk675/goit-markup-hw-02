@@ -309,7 +309,7 @@ nav__item:hover, nav__item:focus {
 }
 
 .contact {
-  display: inline-block;
+  display: flex;
   margin-bottom: 64px;
 }
 
@@ -322,6 +322,7 @@ nav__item:hover, nav__item:focus {
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    flex-direction: row;
   }
 }
 .contact__item:not(:last-child) {
@@ -469,7 +470,7 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero .hero {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/team-tab.jpg);
     background-position: center;
@@ -511,6 +512,7 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   margin-right: auto;
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
@@ -524,7 +526,6 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
     color: #FFFFFF;
   }
 }
-
 .hero__btn {
   font-family: inherit;
   font-weight: 700;
@@ -605,7 +606,7 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .products {
+  .products .products {
     display: block;
   }
 }
@@ -746,9 +747,15 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
 }
 .customers .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 @media screen and (max-width: 480px) {
+  .customers .customers__list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 768px) {
   .customers .customers__list {
     justify-content: center;
   }
@@ -773,6 +780,16 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
 .customers .customers__link:hover {
   fill: var(#2196F3);
   border: var(#2196F3) solid 1px;
+}
+@media screen and (min-width: 768px) {
+  .customers .customers__link .customers__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers .customers__link .customers__link {
+    width: 170px;
+  }
 }
 .customers .customers__icon {
   width: 106px;
