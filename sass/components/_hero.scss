@@ -11,22 +11,24 @@
   background-color: $third-color;
 
   @include retina-2 {
-    background-image: url(../img/team-mob-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/team-mob-2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    .hero {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/team-tab.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    }
+    
     @include retina-2 {
-      background-image: url(../img/team-tab-2x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      url(../img/team-tab-2x.jpg);
     }
   }
+  
  
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
@@ -37,7 +39,8 @@
     background-repeat: no-repeat;
 
     @include retina-2 {
-      background-image: url(../img/team-desk-2x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      url(../img/team-desk-2x.jpg);
     }
   }
 }
@@ -54,9 +57,8 @@ text-align: center;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
-}
+
 @media screen and (min-width: 1200px) {
-  .hero__title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;

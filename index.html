@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto+Serif:opsz@8..144&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <link rel="stylesheet" href="./css/styles.css"/> 
+         <link rel="stylesheet" href="./css/styles.css"/> 
         <link rel="stylesheet" href="./css/main.min.css"/>
         </head>
         
@@ -159,7 +159,12 @@
             <li>
               <div class="thumb">
               <img class="products__item"
-              src="./img/business-img-1.jpg.jpg" 
+              srcset="
+                  ./img/business-img-1.jpg    1x,
+                  ./img/business-img-1@2x.jpg 2x,
+                  ./img/business-img-1@3x.jpg 3x
+                "
+              src="./img/business-img-1.jpg" 
                 alt="Десктопні додатки" 
                 width="370">
             </img>
@@ -169,7 +174,12 @@
                 <li>
                   <div class="thumb">
                     <img class="products__item"
-                    src="./img/business-img-2.jpg.jpg"
+                    srcset="
+                  ./img/business-img-2.jpg    1x,
+                  ./img/business-img-2@2x.jpg 2x,
+                  ./img/business-img-2@3x.jpg 3x
+                "
+                    src="./img/business-img-2.jpg"
                     alt="Мобільні додатки"
                     width="370">
                     </img>
@@ -179,7 +189,12 @@
               <li>
                 <div class="thumb">
                   <img class="products__item"
-                  src="./img/business-img-3.jpg.jpg"
+                  srcset="
+                  ./img/business-img-3.jpg    1x,
+                  ./img/business-img-3@2x.jpg 2x,
+                  ./img/business-img-3@3x.jpg 3x
+                "
+                  src="./img/business-img-3.jpg"
                   alt="Дизайнерські рішення"
                   width="370">
                   </img>
@@ -195,9 +210,33 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
               <li class="team__item">
-                <img src="./img/productdesigner-img-1.jpg.jpg"
+                <picture>
+                  <source
+                    srcset="
+                      ./img/crew1_1200.jpg    1x,
+                      ./img/crew1_1200@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/crew1_768.jpg    1x,
+                      ./img/crew1_768@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/crew1_450.jpg    1x,
+                      ./img/crew1_450@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                <img class="team__img"
+                src="./img/crew1_450.jpg"
                 alt="Ігор Дем'яненко"
-                width="270">
+                width="270"/>
+              </picture>
                 <div class="info">
               <h3 class="info__title">Ігор Дем'яненко</h3>
               <p class="info__text" lang="en">Product Designer</p>
@@ -234,9 +273,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/frontenddevelover-img-2.jpg.jpg"
+              <picture>
+                <source
+                  srcset="
+                    ./img/crew2_1200.jpg    1x,
+                    ./img/crew2_1200@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/crew2_768.jpg    1x,
+                    ./img/crew2_768@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/crew2_450.jpg    1x,
+                    ./img/crew2_450@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+              <img class="team__img"
+              src="./img/crew2_450.jpg"
               alt="Ольга Рєпіна"
-              width="270">
+              width="270"/>
+            </picture>
               <div class="info">
             <h3 class="info__title">Ольга Рєпіна</h3>
             <p class="info__text" lang="en">Frontend Developer</p>
@@ -273,9 +336,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/marketing-img-3.jpg.jpg"
+              <picture>
+                <source
+                  srcset="
+                    ./img/crew3_1200.jpg    1x,
+                    ./img/crew3_1200@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/crew3_768.jpg    1x,
+                    ./img/crew3_768@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/crew3_450.jpg    1x,
+                    ./img/crew3_450@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+              <img class="team__img"
+              src="./img/crew3_450.jpg"
               alt="Микола Тарасов"
-              width="270">
+              width="270"/>
+            </picture>
               <div class="info">
             <h3 class="info__title">Микола Тарасов</h3>
             <p class="info__text" lang="en">Marketing</p>
@@ -312,9 +399,33 @@
             </div>
             </li>
             <li class="team__item">
-              <img src="./img/UIdesigner-img-4.jpg.jpg"
+              <picture>
+                <source
+                  srcset="
+                    ./img/crew4_1200.jpg    1x,
+                    ./img/crew4_1200@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/crew4_768.jpg    1x,
+                    ./img/crew4_768@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/crew4_450.jpg    1x,
+                    ./img/crew4_450@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+              <img class="team__img"
+              src="./img/crew4_450.jpg"
               alt="Михайло Єрмаков"
-              width="270">
+              width="270"/>
+            </picture>
               <div class="info">
             <h3 class="info__title">Михайло Єрмаков</h3>
             <p class="info__text" lang="en">UI Designer</p>

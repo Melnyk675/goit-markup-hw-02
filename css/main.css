@@ -35,6 +35,12 @@ h6 {
   margin: 0;
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+
 ul,
 ol {
   list-style: none;
@@ -466,11 +472,11 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/team-mob-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/team-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero .hero {
+  .hero {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/team-tab.jpg);
     background-position: center;
@@ -480,7 +486,7 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/team-tab-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/team-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -494,7 +500,7 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/team-desk-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/team-desk-2x.jpg);
   }
 }
 
@@ -512,7 +518,6 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   margin-right: auto;
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
@@ -526,6 +531,7 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
     color: #FFFFFF;
   }
 }
+
 .hero__btn {
   font-family: inherit;
   font-weight: 700;
@@ -602,9 +608,6 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   height: 70px;
 }
 
-.products {
-  display: none;
-}
 @media screen and (min-width: 1200px) {
   .products .products {
     display: block;
@@ -655,7 +658,8 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   gap: 30px;
   background: var(#F5F4FA);
 }
-.team .team__title {
+
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -664,16 +668,31 @@ contact__link:hover:hover, contact__link:hover:focus, contact__link:focus:hover,
   color: var(#212121);
   margin-bottom: 50px;
 }
-.team .team__list {
+
+.team__list {
   display: flex;
 }
-.team .team__item {
+
+.team__item {
   background-color: var(#FFFFFF);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team .team__item .team-item:not(:last-child) {
+.team__item .team-item:not(:last-child) {
   margin-right: 30px;
+}
+.team__item .team__img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team__item .team__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item .team__img {
+    width: 270px;
+  }
 }
 
 .info {
