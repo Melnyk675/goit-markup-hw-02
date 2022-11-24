@@ -69,6 +69,7 @@ img {
   margin-right: auto;
   outline: 1px solid transparent;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -84,7 +85,6 @@ img {
     width: 1200px;
   }
 }
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
