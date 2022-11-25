@@ -13,9 +13,7 @@
     color: var($primary-text-color);
     margin-bottom: 50px;
 }
-.team__list {
-    display: flex;
-}
+
 .team__item {
     background-color: var($back-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -45,7 +43,7 @@ font-size: 16px;
 line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
-color: var($primary-text-color);
+color: $primary-text-color;
 }
 
 .info__text {
@@ -54,7 +52,7 @@ color: var($primary-text-color);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var($second-color);
+    color: $second-color;
     margin-top: 10px;
 }
 
@@ -85,13 +83,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var($social-icon-color);
+    fill: $social-icon-color;
     transition-property: background-color, fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
-    background-color: var($blue-color);
-    fill: var($back-color);
+    background-color: $blue-color;
+    fill: $back-color;
 }
 }

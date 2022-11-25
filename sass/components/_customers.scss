@@ -8,11 +8,7 @@
     color: #212121;
     margin-bottom: 50px;
     }
-    .customers__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
+  
     @media screen and (max-width: 480px) {
         .customers__list {
             justify-content: center;

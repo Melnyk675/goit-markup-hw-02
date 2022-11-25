@@ -6,7 +6,6 @@
     @media screen and (min-width: 768px) {
       .header {
         display: flex;
-
       }
 header__logo-header {
     font-family: 'Raleway';
@@ -32,11 +31,9 @@ header__logo-part {
     }
 }
 
-
 .wrapper {
-   display: flex;
-   // display: none;
-   position: fixed;
+  display: none;
+  position: fixed;
    top: 0;
    left: 0;
    // display: flex;
@@ -325,6 +322,7 @@ contact__icon {
 
 .menu-social__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
   @media screen and (min-width: 768px) {
@@ -334,6 +332,10 @@ contact__icon {
 }
 .menu-social__item {
   margin-top: auto;
+  padding-right: 10px;
+}
+.menu-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .menu-social__link {
   font-weight: 500;
@@ -342,6 +344,7 @@ contact__icon {
   letter-spacing: 0.02em;
   color: $blue-color;
 }
-.contact__icon {
-  // display: none;
+
+.js-close-menu {
+  background-color: transparent;
 }
