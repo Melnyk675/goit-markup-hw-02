@@ -129,7 +129,7 @@ img {
   .header {
     display: flex;
   }
-  header__logo-header {
+  .header__logo-header {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -143,13 +143,13 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (min-width: 768px) {
-  header__logo-header .header__logo-header {
+  .header__logo-header .header__logo-header {
     display: inline-block;
     padding: 26px 0;
   }
 }
 @media screen and (min-width: 768px) {
-  header__logo-part {
+  .header__logo-part {
     color: var(#2196F3);
   }
 }
